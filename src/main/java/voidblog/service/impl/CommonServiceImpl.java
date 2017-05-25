@@ -20,11 +20,11 @@ public class CommonServiceImpl implements CommonService{
     private UserDao userDao;
 
     public User getUserById(Long userId) {
-        return userDao.selectUserById(userId);
+        return userDao.findById(userId);
     }
 
     public List<User> getAllUser() {
-        return userDao.selectAllUser();
+        return userDao.findAll();
     }
 
 }

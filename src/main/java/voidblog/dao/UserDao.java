@@ -10,13 +10,10 @@ import java.util.List;
  * Created by lingdeqin on 17-5-24.
  */
 @Repository
-public interface UserDao {
+public interface UserDao extends BaseDao<User>{
 
-    User selectUserById(@Param("userId") Long userId);
 
 //    User selectUserByName(@Param("userName") String username);
-//
 //    User selectUserByNameAndPassword(@Param("userName") String username,@Param("userPassword") String password);
 
-    List<User> selectAllUser();
 }
